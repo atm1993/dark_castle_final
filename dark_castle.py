@@ -91,7 +91,7 @@ def goToRoom(direction, room):
 			if getattr(myGameState.currentRoom, i ) == room:
 				moveRoom(getattr(myGameState.currentRoom, i))
 				return
-		print("You can't go that room")
+		print("You can't go there from here")
 	else:
 		print("You can't go to that room")	
 	

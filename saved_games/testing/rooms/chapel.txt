@@ -7,6 +7,6 @@ east: observatory
 west: scribes_room
 up: observatory
 down: none
-visited: False
+visited: True
 features: altar, pew
 pickupObjects:
