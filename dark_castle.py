@@ -111,6 +111,10 @@ def look():
 
 def take(objects):
 
+	if objects == None or objects == "":
+		print("You must enter something to take")
+		return
+
 	for i in myGameState.currentRoom.pickupObjects:
 		if i.name == objects:
 			myGameState.pickupItemInRoom(objects)
@@ -123,12 +127,18 @@ def take(objects):
 			print("You can't take that")
 			return 
 
+	
 	if objects[-1] != 's':
 		print ("There is no " + str(objects) + " to take")
 	else:
 		print ("There are no " + str(objects) + " to take")
 
 def drop(objects):
+	
+	if objects == None or objects == "":
+		print("You must enter something to drop")
+		return 
+
 	for i in myGameState.inventory:
 		if i.name == objects:
 			myGameState.dropItemInRoom(objects)
