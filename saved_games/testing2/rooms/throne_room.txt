@@ -1,0 +1,12 @@
+name: throne_room
+longForm: You enter the Throne Room. At the center of the room is the large, ominous ~Fthrone~E. It sits upon a dias a few feet high, with a set of small steps leading up to it. It is truly magnificent. Large, tattered tapestries drape the walls of the room. Behind the throne you notice an ornate ~Fstatue~E on a large pillar. To the east is the ~RScribes Room~E and to the west is the ~RKings Bedchambers~E. On the southern side is the doorway to the ~RGreat Hall~E.
+shortForm: The magnificent ~Fthrone~E sits at the center of the room, with a curious ~Fstatue~E placed behind the throne. To the east is the ~RScribes Room~E and to the west is the ~RKings Bedchambers~E. To the south is the ~RGreat Hall~E.
+north: hidden_chamber
+south: great_hall
+east: scribes_room
+west: kings_bedchambers
+up: none
+down: none
+visited: False
+features: throne, statue
+pickupObjects:

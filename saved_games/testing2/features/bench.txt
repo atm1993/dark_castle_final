@@ -1,0 +1,4 @@
+name: bench
+obvsText: It's an old wooden bench, maybe a rest would be good?
+actionText: sit: You sit on the bench and take in the Bailey. What happened to this castle?
+allowedActions: sit

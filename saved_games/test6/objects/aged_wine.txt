@@ -1,0 +1,8 @@
+name: aged_wine
+roomText:
+obvsText: The aged wine appears to be 20 years old. The cork is still preserved, I wonder how it tastes?
+effectText:
+roomWithEffect:
+actionText: drink: You uncork and take a sip of the aged wine. A flavorful deep red hits your tongue. The wine brings you some momentary comfort in the dark castle.
+allowedActions: drink
+dropped: False

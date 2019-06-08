@@ -1,0 +1,12 @@
+name: guard_house
+longForm: You enter a cramped space, the Guard House. At most 2 or 3 men could have fit in here at one time. You notice a dusty ~Fledger~E on the desk and a ~Fpack~E leaning against the wall. A northern doorway exits into the ~RBarracks~E, where the Kingsguard lived. Back west is the ~RCastle Gate~E.
+shortForm: You see a dusty ~Fledger~E on the desk of the Guard House and a ~Fpack~E leaning against the wall. To the north is the exit to the ~RBarracks~E. Back west is the ~RCastle Gate~E.
+north: barracks
+south: none
+east: none
+west: castle_gate
+up: none
+down: none
+visited: True
+features: ledger, pack
+pickupObjects:

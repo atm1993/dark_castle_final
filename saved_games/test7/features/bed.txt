@@ -1,0 +1,4 @@
+name: bed
+obvsText: The bed is enormous, big enough to fit at least five people. It must be quite comfortable.
+actionText: sit: You sit down on the plush bed. You're exhausted from wandering around the castle. You close your eyes for just a second and you're asleep. You jolt awake and wonder how long you were out for.
+allowedActions: sit

@@ -1,0 +1,12 @@
+name: great_hall
+longForm: You enter the Great Hall. Long tables and benches fill the room. Plates and goblets are thrown all over. The walls are lined with magnificent tapestries and paintings. Many a great feasts must have been held here. A large ~Fpainting~E catches your eye across the room. At the head of the middle table, you see a beautiful ~Fwine goblet~E inlaid with gemstones. To the north you see the grand entrance to the ~RThrone Room~E. To the east is the ~RBallroom~E and to the west the ~RKitchen~E. Back south leads you to the ~RBailey~E.
+shortForm: You see the extravagant ~Fwine goblet~E at the head of the large table, and a beautiful ~Fpainting~E across the room. To the north is the ~RThrone Room~E. The eastern side doorway leads to the ~RBallroom~E, and to the west if the ~RKitchen~E. Back south is the ~RBailey~E.
+north: throne_room
+south: bailey
+east: ballroom
+west: kitchen
+up: none
+down: none
+visited: False
+features: wine_goblet, painting
+pickupObjects:

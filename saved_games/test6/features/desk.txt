@@ -1,0 +1,4 @@
+name: desk
+obvsText: The old desk has some papers on it.
+actionText: sit: You sit at the desk and rifle through the contents. It seems to be academic notes, nothing seems of help in your quest.
+allowedActions: sit

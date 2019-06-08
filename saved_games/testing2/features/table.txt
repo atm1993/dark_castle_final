@@ -1,0 +1,4 @@
+name: table
+obvsText: On the table you see some ~Omutton~E. It looks cured. Maybe it's still edible?
+actionText: push: You push the table but it is much too heavy for you to move.: sit: You sit down at the table and think about all the cooks that used to slave away in the kitchen to make the feasts for the grand King and his guests.
+allowedActions: push, sit

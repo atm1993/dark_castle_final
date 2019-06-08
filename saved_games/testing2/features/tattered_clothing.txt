@@ -1,0 +1,4 @@
+name: tattered_clothing
+obvsText: It seems like all the clothing in the room was piled up here in the middle. Why?
+actionText:
+allowedActions:

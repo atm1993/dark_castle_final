@@ -1,0 +1,4 @@
+name: dresser
+obvsText: The dresser is quite large. You notice scuff marks around the edges closest to the wall.
+actionText: open: You open the dresser and find nothing. All the clothes have been taken out.: push: You push the dresser and find an exit on the west wall to the ~Rmoat~E! This must have been a secret passageway for the servants.
+allowedActions: open, push

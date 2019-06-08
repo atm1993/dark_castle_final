@@ -1,0 +1,4 @@
+name: painting
+obvsText: The beautiful painting is a portrait of the King and his family. They stand strong and proud. The Queen is wearing an ornate pendant and has a mirror in her hand.
+actionText:
+allowedActions:

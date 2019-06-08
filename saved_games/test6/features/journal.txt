@@ -1,0 +1,4 @@
+name: journal
+obvsText: It looks like this was the King's personal journal.
+actionText: read: You read an entry from the journal written by the King, "I spent most of the day in the gardens again today, thinking about what I've done...I must not let it consume me." As you sit at the desk and read the journal, you feel a cool breeze at your feet. You look under the desk and see a small tunnel. It looks like it leads north to the ~RKing's Gardens~E!
+allowedActions: read

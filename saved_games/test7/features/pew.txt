@@ -1,0 +1,4 @@
+name: pew
+obvsText: The pew looks like a good place to sit.
+actionText: sit: You take a breather and sit in one of the pews. You look towards the altar and imagine what a sermon would've been like at this castle. You feel like you can sense the presence of a higher power.
+allowedActions: sit

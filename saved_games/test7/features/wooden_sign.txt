@@ -1,0 +1,4 @@
+name: wooden_sign
+obvsText: The sign reads "BEWARE, DO NOT ENTER UNLESS YOU WISH TO NEVER LEAVE".
+actionText: read: The sign reads "BEWARE, DO NOT ENTER UNLESS YOU WISH TO NEVER LEAVE".
+allowedActions: read

@@ -164,6 +164,8 @@ def lookAt(items):
 def performAction(action, item):
 	if item is None or item == '':
 		print(action + " what?")
+		return
+
 	for i in myGameState.currentRoom.features:
 		if i.name == item:
 			if action in i.allowedActions:
@@ -184,9 +186,13 @@ def performAction(action, item):
 				for x, y in i.actionText:
 					if x == action:
 						print(y)
+						return
 			else:
 				print("You can't " + action + " that!")
 				return
+		
+	print("You don't have " + item )
+	return
 
 def help():
 	print("Here are some things you can try:")

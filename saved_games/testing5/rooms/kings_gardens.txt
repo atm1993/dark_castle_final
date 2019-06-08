@@ -1,0 +1,10 @@
+name: kings_gardens
+longForm: You exit the castle in to the Kings Gardens. The flowerbed contains nothing but a single ~Fdead tulip~E. This once was a beautiful garden. You notice a small area that looks disturbed, a ~Fdirt mound~E. You can only return the way you came, south to the ~RKings Bedchambers~E. 
+shortForm: You see a sad, ~Fdead tulip~E in the garden along with a curious ~Fdirt mound~E. You can only return the way you came, south to the ~RKings Bedchambers~E.
+north: none
+south: kings_bedchambers
+east: none
+west: none
+visited: False
+features: dirt_mound, dead_tulip
+pickupObjects: jeweled_pendant

@@ -1,0 +1,4 @@
+name: water
+obvsText: You notice something shimmering in the water. 
+actionText: drink: You take a drink of the moat water. That was a bad idea, it's disgusting.: swim: You dive into the moat and see what caught your eye. It's the ~ORoyal Crown~E! 
+allowedActions: drink, swim

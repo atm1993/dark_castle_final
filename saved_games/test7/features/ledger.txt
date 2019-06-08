@@ -1,0 +1,4 @@
+name: ledger
+obvsText: You look at the guest ledger and see the last person to enter the castle was over 100 years ago.
+actionText: read: You look at the guest ledger and see the last person to enter the castle was over 100 years ago.
+allowedActions: read

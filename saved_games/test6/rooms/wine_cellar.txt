@@ -1,0 +1,12 @@
+name: wine_cellar
+longForm: You climb down the ladder into wine cellar. The wall is lined with a ~Fwine rack~E and in the corner you see a large ~Fbarrel~E. Many of the bottles are cracked or broken. The only way out is back to the ~RKitchen~E up the ladder to the east.
+shortForm: A ~Fwine rack~E lines the wall of the wine cellar, and a large ~Fbarrel~E sits in the corner. The only way out is back to the ~RKitchen~E up the ladder to the east.
+north: none
+south: none
+east: kitchen
+west: none
+up: kitchen
+down: none
+visited: False
+features: wine_rack, barrel
+pickupObjects: aged_wine

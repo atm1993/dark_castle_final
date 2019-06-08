@@ -1,0 +1,4 @@
+name: plaque
+obvsText: The plaque reads, "To all who enter, may you find good fortune and rest in the home of the King".
+actionText: read: The plaque reads, "To all who enter, may you find good fortune and rest in the home of the King".
+allowedActions: read

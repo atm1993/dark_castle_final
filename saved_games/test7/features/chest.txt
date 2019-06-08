@@ -1,0 +1,4 @@
+name: chest
+obvsText: The lock is broken on the chest, it looks like you could open it.
+actionText: open: You open the chest and see a faded drawing. It appears to be a young solider with his wife and child. 
+allowedActions: open

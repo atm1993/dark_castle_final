@@ -1,0 +1,12 @@
+name: servants_quarters
+longForm: In the middle of the Servants Quarters you notice a large pile of ~Ftattered clothing~E. A ~Fdresser~E stands on the west side of the room. To the north you see the entrance to the ~RKitchen~E, and back east you see the ~RBailey~E entrance.
+shortForm: The pile of ~Ftattered clothing~E is interesting. A lone ~Fdresser~E stands on the west side of the room. To the north is the ~RKitchen~E and to the east is the ~RBailey~E.
+north: kitchen
+south: none
+east: bailey
+west: moat
+up: none
+down: none
+visited: True
+features: tattered_clothing, dresser
+pickupObjects: lamp
