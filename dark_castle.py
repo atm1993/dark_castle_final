@@ -154,12 +154,12 @@ def inventory():
 def lookAt(items):
 	for i in myGameState.currentRoom.features:
 		if i.name == items:
-			#featureWItem = i.obvsText
+			
 			for obj in parser.objects:
 				if obj in i.obvsText and getattr(myGameState.currentRoom, 'pickupObjects') == [] and myGameState.currentRoom.name !='great_hall':
 					print("There is nothing else interesting there")
 					return 
-			#print(getattr(myGameState.currentRoom, 'pickupObjects'))
+			
 			print(i.obvsText)
 			return
 	if items == '':
