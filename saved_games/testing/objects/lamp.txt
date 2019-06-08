@@ -1,0 +1,8 @@
+name: lamp
+roomText: You see a ~Olamp~E sitting on top of the dresser. Maybe it could come in handy?
+obvsText: A simple oil ~Olamp~E, maybe this could illuminate a part of the castle?
+effectText: You light your lamp in the darkness and it illuminates the dungeon. Through a ~Fcell door~E you see a long forgotten prisoner, reduced to nothing but bones. The ~Fskeleton~E sits ominously along the wall.
+roomWithEffect: dungeon
+actionText: light: You light the lamp with a spare flint and steel you always carry. A flame bursts to life.
+allowedActions: light
+dropped: True

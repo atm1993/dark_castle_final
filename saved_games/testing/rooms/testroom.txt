@@ -1,0 +1,10 @@
+name: testroomAlex
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: testnorth
+south: testsouth
+east: testeast
+west: testwest
+visited: False
+features: door, desk
+pickupObjects: lamp, stick

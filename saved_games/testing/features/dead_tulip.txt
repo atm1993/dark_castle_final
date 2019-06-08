@@ -1,0 +1,4 @@
+name: dead_tulip
+obvsText: You're amazed a single tulip is still visible even though it's long dead.
+actionText:
+allowedActions:

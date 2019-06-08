@@ -1,0 +1,10 @@
+name: ballroom
+longForm: You enter the magnificent Ballroom. After the large feasts in the Great Hall, guests would fill the Ballroom for any evening of dancing and partying. In the middle of the dance floor you notice an abandoned ~Fball gown~E. Across the dance floor where the musicians played was a lone ~Fviolin~E. To the east is the entrance to the ~RLibrary~E and to the north is the ~RScribes Room. The west door leads to the ~RGreat Hall~E.
+shortForm: In the middle of the dance floor you see an abandoned ~Fball gown~E. Across the dance floor you see a lone ~Fviolin~E. To the east is the entrance to the ~RLibrary~E, and to the north is the ~RScribes Room. The west door leads to the ~RGreat Hall~E.
+north: scribes_room
+south: none
+east: library
+west: great_hall
+visited: True
+features: ball_gown, violin
+pickupObjects:

@@ -1,0 +1,4 @@
+name: scroll
+obvsText: The scroll is rolled up and sealed.
+actionText: read: You unroll the scroll and find a message written by one of the King's trusted scribes. A portion reads, "We must abandon the castle before it's too late. The King has done something awful...".
+allowedActions: read
