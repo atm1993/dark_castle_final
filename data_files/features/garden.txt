@@ -1,0 +1,4 @@
+name: garden
+obvsText: You look closely at the garden using the telescope and don't find any obvious way to get to it. There must be a way...
+actionText:
+allowedActions:

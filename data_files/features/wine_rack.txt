@@ -1,0 +1,4 @@
+name: wine_rack
+obvsText: You look at the wine rack and notice a single preserved bottle of ~Oaged wine~E. You do love wine...
+actionText:
+allowedActions:

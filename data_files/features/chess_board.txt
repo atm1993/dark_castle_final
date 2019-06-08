@@ -1,0 +1,4 @@
+name: chess_board
+obvsText: The board appears to still have all the pieces. Maybe you should play a game.
+actionText: play: You play a game of chess against yourself. You're quite the opponent. 
+allowedActions: play

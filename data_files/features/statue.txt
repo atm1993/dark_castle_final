@@ -1,0 +1,4 @@
+name: statue
+obvsText: The statue is a beautiful commission of the Queen herself. The King must have had it made out of his love for her. It seems to be missing some things. The statue is holding up it's hand as if something should be there. There are also depressions around the head and neck. What could go there?
+actionText: push: You try pushing the statue but it certainly won't budge.
+allowedActions: push

@@ -1,0 +1,12 @@
+name: moat
+longForm: You step out into the fresh air and see the Moat. This must have been a secret entrance for the Servants. You see a ~Fgrave~E marked by a small wooden cross to your side. Down a short walkway is the ~Fwater~E of the moat. To the east is the entrance to the ~RServants Quarters~E.
+shortForm: You walk out to the Moat and notice the ~Fgrave~E to your side, and the ~Fwater~E down the path. Back to the east is the ~RServants Quarters~E.
+north: none
+south: none
+east: servants_quarters
+west: none
+up: none
+down: none
+visited: False
+features: grave, water
+pickupObjects: royal_crown
