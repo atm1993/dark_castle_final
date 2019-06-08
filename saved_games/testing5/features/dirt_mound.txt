@@ -1,4 +1,0 @@
-name: dirt_mound
-obvsText: The dirt mound looks out of place, you wonder if there's something hidden here.
-actionText: dig: You dig through the dirt and come across a magnificent ~Ojeweled pendant~E.
-allowedActions: dig

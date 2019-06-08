@@ -1,8 +1,0 @@
-name: musty_tome
-roomText:
-obvsText: The cover is torn and most of the pages are faded. I wonder what it says?
-effectText:
-roomWithEffect:
-actionText: read: You flip through the pages and see a language which you don't understand. On the last page is an inscription, written in English, it seems to be hastily written. It says "Three objects hold the key to the secret...".
-allowedActions: read
-dropped: False

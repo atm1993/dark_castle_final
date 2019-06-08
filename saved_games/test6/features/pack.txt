@@ -1,4 +1,0 @@
-name: pack
-obvsText: The pack is a bit dusty but intact. It seems there is stuff inside.
-actionText: open: You open the pack and dig through the contents. Nothing catches your eye except a ~Orusty key~E.
-allowedActions: open

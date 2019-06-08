@@ -1,4 +1,0 @@
-name: crumbling_stones
-obvsText: You examine the pile of rubble. Looking down over the edge of the bridge, you see the long drop down to the moat. You contemplate if you really want to go inside. 
-actionText:
-allowedActions:

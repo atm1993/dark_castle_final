@@ -1,4 +1,0 @@
-name: ball_gown
-obvsText: The ball gown, which was once beautiful and ornate, is reduced to tatters.
-actionText:
-allowedActions:

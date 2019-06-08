@@ -1,4 +1,0 @@
-name: greatsword
-obvsText: The large sword is long dulled. An inscription marks the hilt, "To defend my family from all that is evil".
-actionText:
-allowedActions:

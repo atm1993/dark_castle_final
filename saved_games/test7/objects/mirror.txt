@@ -1,8 +1,0 @@
-name: mirror
-roomText:
-obvsText: You see your reflection in the mirror. You think to yourself that you'll take a nice long bath if you ever make it out of this castle...
-effectText: The mirror handle emits a soft glow. It seems to be responding to something in the room.
-roomWithEffect: throne_room
-actionText: 
-allowedActions: none
-dropped: False

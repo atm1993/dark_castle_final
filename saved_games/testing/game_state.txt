@@ -1,3 +1,0 @@
-name: testing
-currentRoom: library
-inventory: lamp, aged_wine, , ,

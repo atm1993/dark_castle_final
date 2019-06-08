@@ -1,4 +1,0 @@
-name: stove
-obvsText: The ashy stove tells you someone has been here recently. Another adventurer trying to find the lost treasure? Hopefully if they are still here it's a friendly presence.
-actionText:
-allowedActions: 

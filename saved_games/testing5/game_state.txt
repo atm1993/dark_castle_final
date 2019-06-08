@@ -1,3 +1,0 @@
-name: testing5
-currentRoom: barracks
-inventory: rusty_key, lamp, mirror,

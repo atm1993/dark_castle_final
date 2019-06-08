@@ -1,3 +1,0 @@
-name: testing2
-currentRoom: servants_quarters
-inventory: lamp

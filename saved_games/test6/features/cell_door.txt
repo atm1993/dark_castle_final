@@ -1,4 +1,0 @@
-name: cell_door
-obvsText: The door's lock has rusted through.
-actionText: push: You push the door open easily, it's almost off it's hinges.
-allowedActions: push

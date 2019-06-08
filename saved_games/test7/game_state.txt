@@ -1,3 +1,0 @@
-name: test7
-currentRoom: kitchen
-inventory: mutton

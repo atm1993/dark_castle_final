@@ -1,4 +1,0 @@
-name: bookshelf
-obvsText: The bookshelf still contains one tome. Maybe it holds important information?
-actionText: read: You read a tome off the bookshelf. A passage catches your eye but only a few words are still legible. You read something about a statue, it seems it's of great importance.
-allowedActions: read

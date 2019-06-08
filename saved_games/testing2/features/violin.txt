@@ -1,4 +1,0 @@
-name: violin
-obvsText: For being abandoned, this violin is in pretty good condition. You wonder if you could play it still?
-actionText: play: Another lifetime ago, you used to play the violin. You try a few notes and find the sound comforting in this place.
-allowedActions: play

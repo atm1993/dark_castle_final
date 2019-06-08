@@ -1,8 +1,0 @@
-name: royal_crown
-roomText:
-obvsText: The royal crown, worn by the great king years ago. It is simple, with a large ruby as the centerpiece. This treasure alone is worth the trip, but there must be more here.
-effectText: The ruby in the royal crown is flashing, as if it is urging you towards something in the room...
-roomWithEffect: throne_room
-actionText: 
-allowedActions: none
-dropped: False

@@ -1,8 +1,0 @@
-name: mutton
-roomText: 
-obvsText: It's a hunk of cured meat. This could be useful if you get hungry.
-effectText:
-roomWithEffect:
-actionText: eat: You take a bite of the cured mutton. A little chewy, but not bad.
-allowedActions: eat
-dropped: True

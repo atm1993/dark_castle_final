@@ -1,8 +1,0 @@
-name: jeweled_pendant
-roomText:
-obvsText: The pendant is inlaid with a beautiful turquoise gem. It is in the shape of a hexagon. On the back you notice a small inscription. It says, "For Julia, my love".
-effectText: The Jeweled Pendant is radiating a...feeling. It's as if it's alive and is looking for something. There must be a secret hidden in the Throne Room.
-roomWithEffect: throne_room
-actionText: 
-allowedActions: none
-dropped: False

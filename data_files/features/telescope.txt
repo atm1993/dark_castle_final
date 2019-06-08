@@ -1,4 +1,4 @@
 name: telescope
 obvsText: The telescope looks to be in good condition. Maybe you can use it.
-actionText: use: You look through the telescope and notice a ~Fmgarden~E on the northwest side of the castle.
+actionText: use: You look through the telescope and notice a ~Fgarden~E on the northwest side of the castle.
 allowedActions: use

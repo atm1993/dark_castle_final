@@ -1,4 +1,0 @@
-name: skeleton
-obvsText: The skeleton has long since been picked clean. Nothing remains but the bones. In it's right hand you notice a small ~Omirror~E.
-actionText:
-allowedActions:

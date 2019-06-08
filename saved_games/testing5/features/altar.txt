@@ -1,4 +1,0 @@
-name: altar
-obvsText: The altar shines brilliantly from the moonlight, a bright gold. It's carved with scripture around the base.
-actionText: push: You try giving the altar a push but nothing comes of it. This thing must be solid gold!
-allowedActions: push

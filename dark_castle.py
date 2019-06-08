@@ -154,6 +154,12 @@ def inventory():
 def lookAt(items):
 	for i in myGameState.currentRoom.features:
 		if i.name == items:
+			#featureWItem = i.obvsText
+			for obj in parser.objects:
+				if obj in i.obvsText and getattr(myGameState.currentRoom, 'pickupObjects') == [] and myGameState.currentRoom.name !='great_hall':
+					print("There is nothing else interesting there")
+					return 
+			#print(getattr(myGameState.currentRoom, 'pickupObjects'))
 			print(i.obvsText)
 			return
 	if items == '':
@@ -171,10 +177,15 @@ def performAction(action, item):
 			if action in i.allowedActions:
 				for x, y in i.actionText:
 					if x == action:
+						for obj in parser.objects:
+							if obj in y and getattr(myGameState.currentRoom, 'pickupObjects') == []:
+								print("There is nothing else interesting there")
+								return 
 						print(y)
+
 				return
 			else:
-				print("You can't " + action + "that!")
+				print("You can't " + action + " that!")
 				return
 	for i in myGameState.currentRoom.pickupObjects:
 		if i.name == item:

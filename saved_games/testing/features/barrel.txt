@@ -1,4 +1,0 @@
-name: barrel
-obvsText: The large barrel looks to be holding some wine.
-actionText: open: You open the barrel and find old musty wine sitting in it. This probably went bad ages ago.
-allowedActions: open

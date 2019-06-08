@@ -1,4 +1,0 @@
-name: grave
-obvsText: You look at the small grave, it must hold the body of a child. How sad...
-actionText:
-allowedActions:

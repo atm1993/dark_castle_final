@@ -1,4 +1,0 @@
-name: wine_goblet
-obvsText: The wine goblet is beautiful. It would be worth a fortune, but there are bigger treasures here to find.
-actionText: drink: You actually thought there would be something in the glass?
-allowedActions: drink

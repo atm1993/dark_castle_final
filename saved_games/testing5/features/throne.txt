@@ -1,4 +1,0 @@
-name: throne
-obvsText: It's a beautiful throne, fit for a king. You wonder when the last time anyone sat in it was.
-actionText: sit: You sit on the grand throne and imagine what your life would've been like had you been born into royalty.
-allowedActions: sit
