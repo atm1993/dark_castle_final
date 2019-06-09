@@ -1,7 +1,7 @@
 name: rusty_key
 roomText:
 obvsText: It's a simple key. I wonder what it opens?
-effectText: You try the key on the locked desk and it works! Inside you see some papers and a musty tome.
+effectText: You try the key on the locked desk and it works! Inside you see some papers and a ~Omusty tome~E.
 roomWithEffect: observatory
 actionText: 
 allowedActions:

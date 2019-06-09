@@ -43,6 +43,11 @@ def getGametype():
 			print("Please try again!") 
 
 def moveRoom(roomName):
+
+	if roomName == 'hidden_chamber' and myGameState.checkHiddenChamberStatus() == -1:
+		print("You try going north, but the wall won't budge...")
+		return
+
 	myGameState.currentRoom.loadRoom(myGameState.name, roomName)
 
 	if myGameState.checkHiddenChamberStatus() == 1:
@@ -62,12 +67,22 @@ def moveRoom(roomName):
 		printScreen('treasure.txt')
 	
 	for i in myGameState.inventory:
+		flag = 0
 		if i.roomWithEffect == myGameState.currentRoom.name:
-			print(i.effectText)
+			for obj in parser.objects:
+				if obj in i.effectText:
+					if myGameState.currentRoom.pickupObjects == []:
+						flag = 1
+					else:
+						for pickupObject in myGameState.currentRoom.pickupObjects:
+							if pickupObject.name == parser.objects[obj] and pickupObject.dropped == True:
+								flag = 1
+			if flag == 0:
+				print(i.effectText)
 
 	for i in myGameState.currentRoom.pickupObjects:
 		if i.name != '' and i.dropped == True:
-			print("The \033[93m" + i.name + "\033[0m you left is still here.")
+			print("The \033[93m" + i.name.replace('_', ' ') + "\033[0m you left is still here.")
 		elif i.name != '' and i.dropped == False and i.roomText != '':
 			print(i.roomText)
 
@@ -105,7 +120,7 @@ def look():
 
 	for i in myGameState.currentRoom.pickupObjects:
 		if i.name != '' and i.dropped == True:
-			print("The \033[93m" + i.name + "\033[0m you left is still here.")
+			print("The \033[93m" + i.name.replace('_', ' ') + "\033[0m you left is still here.")
 		elif i.name != '' and i.dropped == False and i.roomText != '':
 			print(i.roomText)
 
@@ -118,7 +133,7 @@ def take(objects):
 	for i in myGameState.currentRoom.pickupObjects:
 		if i.name == objects:
 			myGameState.pickupItemInRoom(objects)
-			print("You take the " + objects)
+			print("You take the " + objects.replace('_', ' '))
 			return
 	
 	for j in myGameState.currentRoom.features:
@@ -129,9 +144,9 @@ def take(objects):
 
 	
 	if objects[-1] != 's':
-		print ("There is no " + str(objects) + " to take")
+		print ("There is no " + str(objects).replace('_', ' ') + " to take")
 	else:
-		print ("There are no " + str(objects) + " to take")
+		print ("There are no " + str(objects).replace('_', ' ') + " to take")
 
 def drop(objects):
 	
@@ -142,24 +157,37 @@ def drop(objects):
 	for i in myGameState.inventory:
 		if i.name == objects:
 			myGameState.dropItemInRoom(objects)
-			print(objects + " dropped")
+			print(objects.replace('_', ' ') + " dropped")
 			return 
 	print("You aren't carrying that")
 
 def inventory():
 	print("Your inventory:")
 	for i in range(len(myGameState.inventory)):
-		print(myGameState.inventory[i].name)
+		print((myGameState.inventory[i].name).replace('_', ' '))
 
 def lookAt(items):
 	for i in myGameState.currentRoom.features:
 		if i.name == items:
 			
 			for obj in parser.objects:
-				if obj in i.obvsText and getattr(myGameState.currentRoom, 'pickupObjects') == [] and myGameState.currentRoom.name !='great_hall':
-					print("There is nothing else interesting there")
-					return 
-			
+				if obj in i.obvsText:
+					if getattr(myGameState.currentRoom, 'pickupObjects') == [] and myGameState.currentRoom.name !='great_hall':
+						print("There is nothing else interesting there")
+						return
+					else:
+						for pickupObject in myGameState.currentRoom.pickupObjects:
+							if pickupObject.name == parser.objects[obj] and pickupObject.dropped == True:
+								print("There is nothing else interesting there")
+								return 
+			print(i.obvsText)
+			return
+	for i in myGameState.inventory:
+		if i.name == items:
+			print(i.obvsText)
+			return
+	for i in myGameState.currentRoom.pickupObjects:
+		if i.name == items:
 			print(i.obvsText)
 			return
 	if items == '':
@@ -178,14 +206,20 @@ def performAction(action, item):
 				for x, y in i.actionText:
 					if x == action:
 						for obj in parser.objects:
-							if obj in y and getattr(myGameState.currentRoom, 'pickupObjects') == []:
-								print("There is nothing else interesting there")
-								return 
+							if obj in y:
+								if getattr(myGameState.currentRoom, 'pickupObjects') == []:
+									print("There is nothing else interesting there")
+									return
+								else:
+									for pickupObject in myGameState.currentRoom.pickupObjects:
+										if pickupObject.name == parser.objects[obj] and pickupObject.dropped == True:
+											print("There is nothing else interesting there")
+											return
 						print(y)
 
 				return
 			else:
-				print("You can't " + action + " that!")
+				print("Sorry, that won't work!")
 				return
 	for i in myGameState.currentRoom.pickupObjects:
 		if i.name == item:
@@ -202,7 +236,7 @@ def performAction(action, item):
 				print("You can't " + action + " that!")
 				return
 		
-	print("You don't have " + item )
+	print("That won't work.")
 	return
 
 def help():
@@ -211,10 +245,28 @@ def help():
 	print("look, look at")
 	print("push")
 	print("read")
+	print("open")
 	print("take, grab, pick up")
+	print("loadgame, savegame")
 	print("There are more actions, try thinking what seems logical for the feature you are looking at!")
 	print("Good luck!")
 
+def savegame():
+	myGameState.saveGame()
+	print("Game saved!")
+
+def loadgame(item):
+	myGameState.saveGame()
+	if item is None or item is '':
+		gameName = input("Enter the saved game name to load: ")
+	else:
+		gameName = item
+	if myGameState.loadGame(gameName) == -1:
+		print("No game with that name exists!")
+	else:
+		myGameState.loadGame(gameName)
+		print("Welcome back " + gameName + "!")
+		print(myGameState.currentRoom.longForm)
 
 ### MAIN GAME ### 
 
@@ -228,7 +280,7 @@ moveRoom(myGameState.currentRoom.name)
 
 while (playerIsAlive == True and gameWon == False): 
 
-	command = input("> ")
+	command = input(myGameState.name + "> ")
 	parser = Parse()
 	action, room, direction, item, objects = parser.parse_user_input(command)
 
@@ -241,7 +293,10 @@ while (playerIsAlive == True and gameWon == False):
 			print("I need a room or a direction!")
 
 	elif (action == 'look'):
-		look()
+		if item is not None:
+			lookAt(item)
+		else:
+			look()
 
 	elif (action == 'look at'):
 		lookAt(item)
@@ -260,6 +315,12 @@ while (playerIsAlive == True and gameWon == False):
 	
 	elif action == 'quit':
 		exit()
+	
+	elif(action == 'savegame'):
+		savegame()
+	
+	elif(action == 'loadgame'):
+		loadgame(item)
 
 	elif action is not None:
 		performAction(action, item)

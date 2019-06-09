@@ -140,5 +140,7 @@ class gameState:
                     counter = counter + 1
             if counter == 3:
                 return 1
+            else:
+                return -1
         else:
             return -1
