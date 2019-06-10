@@ -23,6 +23,9 @@ def getGametype():
 		elif game_type == "N":
 			gameName = input("Enter a new game name: ")
 			myGameState = gameState.gameState()
+			if len(gameName.replace(' ', '')) == 0:
+				print("Please enter a game name!")
+				continue
 			if myGameState.newGame(gameName) == -1:
 				print("A game with that name already exists!")
 				print("Please try again.")
@@ -32,6 +35,9 @@ def getGametype():
 		elif game_type == "L":
 			gameName = input("Enter the saved game name to load: ")
 			myGameState = gameState.gameState()
+			if len(gameName.replace(' ', '')) == 0:
+				print("Please enter a game name!")
+				continue
 			if myGameState.loadGame(gameName) == -1:
 				print("No game with that name exists!")
 				print("Please try again")
